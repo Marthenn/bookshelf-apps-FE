@@ -48,18 +48,21 @@ main{
 
 .input-buku input{
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-top: 15px;
     border: none;
     width: 95%;
     outline: none;
 }
 
-.input-inline{
+.statusBaru{
     display: grid;
     margin-top: 10px;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: auto auto;
+}
+
+.statusBaru > label{
+    padding-top: 10px;
 }
 
 #tambahBuku{
@@ -69,8 +72,8 @@ main{
     border: none;
     border-radius: 1e31px;
     outline: none;
-    background-color: #FFF7E9;
-    color: black;
+    background-color: #1746A2;
+    color: white;
     cursor: pointer;
 }
 
