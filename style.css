@@ -123,7 +123,24 @@ main{
     align-items: center;
 }
 
-.bookshelf > h2{
+#shelf-header{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    grid-gap: 10px;
+}
+
+#shelf-header > button{
+    border-radius: 1e31px;
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #1746A2;
+    color: white;
+    cursor: pointer;
+}
+
+.bookshelf > #shelf-header > h2{
     text-align: center;
 }
 
