@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Bookshelf Apps</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
     <body>
-        <header class="header">
-            <div class = "header-title">
-                <h1><b>Bookshelf Apps</b></h1>
-            </div>
+        <header>
+            <h1>Bookshelf Apps</h1>
         </header>
         <main>
-            <div class = "main-container">
-                
-            </div>
+            <section class="search">
+                <form id="search-form">
+                    <input id="searchJudul" type="text" name="search-input" placeholder="Masukkan judul buku">
+                    <button id="searchButtonElement" type="submit">Cari</button>
+                </form>
+            </section>
+            <section class="bookshelf">
+                <h2 id="bookshelf-title">Belum Selesai Dibaca</h2>
+                <div id="bookshelf-list">
+<article class="book_item">
+<h3>Book Title</h3>
+<p>Penulis: John Doe</p>
+<p>Tahun: 2002</p>
+
+<div class="action">
+<button class="edit">Edit buku</button>
+<button class="delete">Hapus buku</button>
+</div>
+</article>
+<article class="book_item">
+<h3>Book Title</h3>
+<p>Penulis: John Doe</p>
+<p>Tahun: 2002</p>
+
+<div class="action">
+<button class="edit">Edit buku</button>
+<button class="delete">Hapus buku</button>
+</div>
+</article>
+<article class="book_item">
+<h3>Book Title</h3>
+<p>Penulis: John Doe</p>
+<p>Tahun: 2002</p>
+
+<div class="action">
+<button class="edit">Edit buku</button>
+<button class="delete">Hapus buku</button>
+</div>
+</article>
+                </div>
+            </section>
+            <aside class="input-buku">
+                <form id="inputBuku">
+                    <div class="input">
+                        <input id="titleBaru" type="text" name="titleBaru" placeholder="Judul Buku">
+                    </div>
+                    <div class="input">
+                        <input id="authorBaru" type="text" name="authorBaru" placeholder="Penulis Buku">
+                    </div>
+                    <div class="input">
+                        <input id="yearBaru" type="text" name="yearBaru" placeholder="Tahun Rilis">
+                    </div>
+                    <div class="input-inline">
+                        <label for="isCompleteBaru">Selesai Dibaca</label>
+                        <input id="isCompleteBaru" type="checkbox" name="isCompleteBaru">
+                    </div>
+                    <button id="tambahBuku" type="submit">Tambahkan Buku</button>
+                </form>
+            </aside>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>
