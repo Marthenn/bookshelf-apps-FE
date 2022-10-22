@@ -177,6 +177,7 @@ main{
 .book_item > .action > .edit{
     background-color: #1746A2;
     color: white;
+    margin-right: 5px;
 }
 
 .book_item > .action > .delete{
